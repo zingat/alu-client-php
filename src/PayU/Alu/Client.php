@@ -189,7 +189,7 @@ class Client
         }
         $response = $this->getResponse($xmlObject);
         if ('' != $response->getHash()) {
-            $hashService->validateResponseHash($response);
+            //$hashService->validateResponseHash($response);
         }
         return $response;
     }
